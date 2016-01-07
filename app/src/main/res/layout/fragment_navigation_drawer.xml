@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.muoki.materialtest.NavigationDrawerFragment"
+    android:background="#FFF">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/containerDrawerImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEE">
+
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="160dp"
+            android:src="@drawable/my_image"
+            android:id="@+id/DrawerImageView"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/DrawerList"
+        android:layout_below="@+id/containerDrawerImage">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</RelativeLayout>
